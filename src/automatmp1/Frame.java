@@ -226,7 +226,7 @@ public class Frame extends javax.swing.JFrame {
 		resetButton.setBounds(300, 480, 80, 80);
 		
 		sButton.setBounds(70, 270, 80, 80);
-		ImageIcon sImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\scientist.png");
+		ImageIcon sImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\AUTOMAT-MP-Pineda-Sayson\\src\\images\\scientist.png");
 		Image sImg = sImage.getImage();
 		Image newSImg = sImg.getScaledInstance(sButton.getWidth(), sButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon sImageIcon = new ImageIcon(newSImg);
@@ -235,7 +235,7 @@ public class Frame extends javax.swing.JFrame {
 		validate();
 		
 		cButton.setBounds(70, 360, 80, 80);
-		ImageIcon cImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Cow.png");
+		ImageIcon cImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\AUTOMAT-MP-Pineda-Sayson\\src\\images\\Cow.png");
 		Image cImg = cImage.getImage();
 		Image newCImg = cImg.getScaledInstance(cButton.getWidth(), cButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon cImageIcon = new ImageIcon(newCImg);
@@ -244,7 +244,7 @@ public class Frame extends javax.swing.JFrame {
 		validate();
 		
 		lButton.setBounds(70, 450, 80, 80);
-		ImageIcon lImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Lion.png");
+		ImageIcon lImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\AUTOMAT-MP-Pineda-Sayson\\src\\images\\Lion.png");
 		Image lImg = lImage.getImage();
 		Image newLImg = lImg.getScaledInstance(lButton.getWidth(), lButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon lImageIcon = new ImageIcon(newLImg);
@@ -253,7 +253,7 @@ public class Frame extends javax.swing.JFrame {
 		validate();
 		
 		gButton.setBounds(170, 270, 80, 80);
-		ImageIcon gImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Grains.png");
+		ImageIcon gImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\AUTOMAT-MP-Pineda-Sayson\\src\\images\\Grains.png");
 		Image gImg = gImage.getImage();
 		Image newGImg = gImg.getScaledInstance(gButton.getWidth(), gButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon gImageIcon = new ImageIcon(newGImg);
@@ -262,7 +262,7 @@ public class Frame extends javax.swing.JFrame {
 		validate();
 		
 		h1Button.setBounds(170, 360, 80, 80);
-		ImageIcon h1Image = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Human1.png");
+		ImageIcon h1Image = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\AUTOMAT-MP-Pineda-Sayson\\src\\images\\Human1.png");
 		Image h1Img = h1Image.getImage();
 		Image newH1Img = h1Img.getScaledInstance(h1Button.getWidth(), h1Button.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon h1ImageIcon = new ImageIcon(newH1Img);
@@ -272,7 +272,7 @@ public class Frame extends javax.swing.JFrame {
 
 		
 		h2Button.setBounds(170, 450, 80, 80);
-		ImageIcon h2Image = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Human2.png");
+		ImageIcon h2Image = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\AUTOMAT-MP-Pineda-Sayson\\src\\images\\Human2.png");
 		Image h2Img = h2Image.getImage();
 		Image newH2Img = h2Img.getScaledInstance(h2Button.getWidth(), h2Button.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon h2ImageIcon = new ImageIcon(newH2Img);
