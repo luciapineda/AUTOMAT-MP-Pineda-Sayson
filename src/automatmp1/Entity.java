@@ -5,6 +5,8 @@
  */
 package automatmp1;
 
+import java.awt.Color;
+
 /**
  *
  * @author Belle
@@ -25,4 +27,6 @@ public class Entity {
     public String getLocation() {
     	return location;
     }
+
+
 }

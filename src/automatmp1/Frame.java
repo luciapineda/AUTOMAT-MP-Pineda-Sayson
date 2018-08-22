@@ -8,7 +8,9 @@ package automatmp1;
 import java.util.ArrayList;
 import java.awt.Color;
 import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.Image;
+import javax.swing.JPanel;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
@@ -28,7 +30,51 @@ import javax.swing.*;
  * @author Belle
  */
 public class Frame extends javax.swing.JFrame {
-	public Container pane;
+    public Container pane;
+    JPanel jp1 = new JPanel();
+    JPanel jp2 = new JPanel();
+    StatePanel s1 = new StatePanel();
+    StatePanel s2 = new StatePanel();
+    StatePanel s3 = new StatePanel();
+    StatePanel s4 = new StatePanel();
+    StatePanel s5 = new StatePanel();
+    StatePanel s6 = new StatePanel();
+    StatePanel s7 = new StatePanel();
+    StatePanel s8 = new StatePanel();
+    StatePanel s9 = new StatePanel();
+    StatePanel s10 = new StatePanel();
+    StatePanel s11 = new StatePanel();
+    StatePanel s12 = new StatePanel();
+    StatePanel s13 = new StatePanel();
+    StatePanel s14 = new StatePanel();
+    StatePanel s15 = new StatePanel();
+    StatePanel s16 = new StatePanel();
+//    LinePanel lp1 = new LinePanel();
+//    LinePanel lp2 = new LinePanel();
+//    LinePanel lp3 = new LinePanel();
+//    LinePanel lp4 = new LinePanel();
+//    LinePanel lp5 = new LinePanel();
+//    LinePanel lp6 = new LinePanel();
+//    LinePanel lp7 = new LinePanel();
+//    LinePanel lp8 = new LinePanel();
+//    LinePanel1 lp9 = new LinePanel1();
+//    LinePanel1 lp10 = new LinePanel1();
+//    LinePanel2 lp11 = new LinePanel2();
+//    LinePanel lp12 = new LinePanel();
+//    LinePanel lp13 = new LinePanel();
+//    LinePanel lp14 = new LinePanel();
+//    LinePanel lp15 = new LinePanel();
+//    LinePanel lp16 = new LinePanel();
+//    LinePanel lp17 = new LinePanel();
+//    LinePanel lp18 = new LinePanel();
+//    LinePanel lp19 = new LinePanel();
+//    LinePanel lp20 = new LinePanel();
+//    LinePanel lp21 = new LinePanel();
+//    LinePanel lp22 = new LinePanel();
+//    LinePanel lp23 = new LinePanel();
+
+    
+    
 	
     Formatter formatter = new Formatter();
     
@@ -54,6 +100,7 @@ public class Frame extends javax.swing.JFrame {
     
     public Frame() {
         initComponents();
+        setTitle("Automat MP");
         
         earth.addOccupant(s.name);
         earth.addOccupant(c.name);
@@ -70,6 +117,35 @@ public class Frame extends javax.swing.JFrame {
         dm.addElement(g.name);
         dm.addElement(h1.name);
         dm.addElement(h2.name);
+        s1.setBounds(0, 500, 20, 20);
+        s2.setBounds(100, 500, 20, 20);
+        s3.setBounds(200, 500, 20, 20);
+        s4.setBounds(300, 500, 20, 20);
+        s5.setBounds(400, 500, 20, 20);
+        s6.setBounds(500, 500, 20, 20);
+        s7.setBounds(600, 500, 20, 20);
+        s8.setBounds(700, 500, 20, 20);
+        s9.setBounds(200, 400, 20, 20);
+        s10.setBounds(200, 300, 20, 20);
+        s11.setBounds(200, 200, 20, 20);
+        s12.setBounds(0, 300, 20, 20);
+        s13.setBounds(350, 270, 20, 20);
+        s14.setBounds(450, 400, 20, 20);
+        s15.setBounds(550, 450, 20, 20);
+        s16.setBounds(700, 270, 20, 20);
+//        lp1.setBounds(20, 507, 70, 50);
+//        lp2.setBounds(120, 507, 70, 50);
+//        lp3.setBounds(220, 507, 70, 50);
+//        lp4.setBounds(320, 507, 70, 50);
+//        lp5.setBounds(420, 507, 70, 50);
+//        lp6.setBounds(520, 507, 70, 50);
+//        lp7.setBounds(620, 507, 70, 50);
+//        lp8.setBounds(370, 277, 450, 50);
+//        lp9.setBounds(10, 310, 190, 300);
+//        lp10.setBounds(210, 210, 130, 300);
+//        lp11.setBounds()
+        
+        
     }
 
     /**
@@ -81,7 +157,7 @@ public class Frame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
     	setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-    	setSize(800,700);
+    	setSize(1650,1000);
 
         sButton = new javax.swing.JButton();
         cButton = new javax.swing.JButton();
@@ -181,103 +257,164 @@ public class Frame extends javax.swing.JFrame {
         
 
 		pane = getContentPane();
-		pane.setLayout(null);
+		pane.setLayout(new BoxLayout(pane, BoxLayout.X_AXIS));
+
+		jp1.setPreferredSize(new Dimension(550, 700));
+		jp1.setMaximumSize(jp1.getPreferredSize()); 
+		jp1.setMinimumSize(jp1.getPreferredSize());
+		jp1.setLayout(null);
+
+		jp2.setPreferredSize(new Dimension(1000, 700));
+		jp2.setMaximumSize(jp2.getPreferredSize()); 
+		jp2.setMinimumSize(jp2.getPreferredSize());
+		jp2.setLayout(null);
+		
+		pane.add(jp1);
+		pane.add(jp2);
+		
+		jp2.add(s1);
+		jp2.add(s2);
+		jp2.add(s3);
+		jp2.add(s4);
+		jp2.add(s5);
+		jp2.add(s6);
+		jp2.add(s7);
+		jp2.add(s8);
+		jp2.add(s9);
+		jp2.add(s10);
+		jp2.add(s11);
+		jp2.add(s12);
+		jp2.add(s13);
+		jp2.add(s14);
+		jp2.add(s15);
+		jp2.add(s16);
+//		jp2.add(lp1);
+//		jp2.add(lp2);
+//		jp2.add(lp3);
+//		jp2.add(lp4);
+//		jp2.add(lp5);
+//		jp2.add(lp6);
+//		jp2.add(lp7);
+//		jp2.add(lp8);
+//		jp2.add(lp9);
+//		jp2.add(lp10);
+//		jp2.add(lp11);
+//		jp2.add(lp12);
+//		jp2.add(lp13);
+//		jp2.add(lp14);
+//		jp2.add(lp15);
+//		jp2.add(lp16);
+//		jp2.add(lp17);
+//		jp2.add(lp18);
+//		jp2.add(lp19);
+//		jp2.add(lp20);
+//		jp2.add(lp21);
+//		jp2.add(lp22);
+//		jp2.add(lp23);
+
+		//s1.setBound(100, 100, 50, 50);
+
+		
+		//jp2.drawOval(100, 100, 80,80);
 		
 		
-		pane.add(jLabel1);
+		
+		jp1.add(jLabel1); // earth
 		jLabel1.setBounds(100, 30, 50, 50);
 		
-		pane.add(jLabel2);
+		jp1.add(jLabel2); // mars
 		jLabel2.setBounds(360, 30, 50, 50);
 		
-		pane.add(movesLbl);
+		jp1.add(movesLbl);
 		movesLbl.setBounds(305, 250, 50, 50);
 		
-		pane.add(jList1);
+		jp1.add(jList1); 
 		jList1.setBounds(70, 80, 100, 150);
 		
-		pane.add(jList2);
+		jp1.add(jList2);
 		jList2.setBounds(200, 80, 100, 150);
   
-		pane.add(jList3);
+		jp1.add(jList3);
 		jList3.setBounds(330, 80, 100, 150);
 		
-		pane.add(messageTA);
+		jp1.add(messageTA);
 		messageTA.setEditable(false);
 		messageTA.setBounds(300, 580, 170, 50);
 		
+		
+		
 		goButton.setBounds(300, 300, 80, 80);
-		ImageIcon goImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\go.png");
+		ImageIcon goImage = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\go.png");
 		Image goImg = goImage.getImage();
 		Image newGoImg = goImg.getScaledInstance(goButton.getWidth(), goButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon goImageIcon = new ImageIcon(newGoImg);
 		goButton.setIcon(goImageIcon);
-		pane.add(goButton);
+		jp1.add(goButton);
 		validate();
 
 		goButton.setOpaque(false);
 		goButton.setContentAreaFilled(false);
 		goButton.setBorderPainted(false);
 
-		pane.add(clrButton);
+		jp1.add(clrButton);
 		clrButton.setBounds(300, 390, 80, 80);
 		
-		pane.add(resetButton);
+		jp1.add(resetButton);
 		resetButton.setBounds(300, 480, 80, 80);
 		
 		sButton.setBounds(70, 270, 80, 80);
-		ImageIcon sImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\scientist.png");
+		ImageIcon sImage = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\scientist.png");
 		Image sImg = sImage.getImage();
 		Image newSImg = sImg.getScaledInstance(sButton.getWidth(), sButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon sImageIcon = new ImageIcon(newSImg);
 		sButton.setIcon(sImageIcon);
-		pane.add(sButton);
+		jp1.add(sButton);
 		validate();
 		
 		cButton.setBounds(70, 360, 80, 80);
-		ImageIcon cImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Cow.png");
+		ImageIcon cImage = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\Cow.png");
 		Image cImg = cImage.getImage();
 		Image newCImg = cImg.getScaledInstance(cButton.getWidth(), cButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon cImageIcon = new ImageIcon(newCImg);
 		cButton.setIcon(cImageIcon);
-		pane.add(cButton);
+		jp1.add(cButton);
 		validate();
 		
 		lButton.setBounds(70, 450, 80, 80);
-		ImageIcon lImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Lion.png");
+		ImageIcon lImage = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\Lion.png");
 		Image lImg = lImage.getImage();
 		Image newLImg = lImg.getScaledInstance(lButton.getWidth(), lButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon lImageIcon = new ImageIcon(newLImg);
 		lButton.setIcon(lImageIcon);
-		pane.add(lButton);
+		jp1.add(lButton);
 		validate();
 		
 		gButton.setBounds(170, 270, 80, 80);
-		ImageIcon gImage = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Grains.png");
+		ImageIcon gImage = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\Grains.png");
 		Image gImg = gImage.getImage();
 		Image newGImg = gImg.getScaledInstance(gButton.getWidth(), gButton.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon gImageIcon = new ImageIcon(newGImg);
 		gButton.setIcon(gImageIcon);
-		pane.add(gButton);
+		jp1.add(gButton);
 		validate();
 		
 		h1Button.setBounds(170, 360, 80, 80);
-		ImageIcon h1Image = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Human1.png");
+		ImageIcon h1Image = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\Human1.png");
 		Image h1Img = h1Image.getImage();
 		Image newH1Img = h1Img.getScaledInstance(h1Button.getWidth(), h1Button.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon h1ImageIcon = new ImageIcon(newH1Img);
 		h1Button.setIcon(h1ImageIcon);
-		pane.add(h1Button);
+		jp1.add(h1Button);
 		validate();
 
 		
 		h2Button.setBounds(170, 450, 80, 80);
-		ImageIcon h2Image = new ImageIcon("C:\\Users\\Lucia Pineda\\workspace\\automat\\AutomatMP1\\src\\images\\Human2.png");
+		ImageIcon h2Image = new ImageIcon("C:\\Users\\Belle\\Documents\\GitHub\\automat\\AutomatMP1\\src\\images\\Human2.png");
 		Image h2Img = h2Image.getImage();
 		Image newH2Img = h2Img.getScaledInstance(h2Button.getWidth(), h2Button.getHeight(), Image.SCALE_SMOOTH); //this makes the image fit the button
 		ImageIcon h2ImageIcon = new ImageIcon(newH2Img);
 		h2Button.setIcon(h2ImageIcon);
-		pane.add(h2Button);
+		jp1.add(h2Button);
 		validate();
 		
 		
@@ -426,6 +563,8 @@ public class Frame extends javax.swing.JFrame {
         jList1.setModel(dm);
         jList2.setModel(dm1);
         jList3.setModel(dm2);
+        int c = 0;
+        
         
         
         int g = 0;
@@ -539,17 +678,120 @@ public class Frame extends javax.swing.JFrame {
     		messageTA.setText(message);
         }
         
-        if(earth.getOccupants().isEmpty())
-        {
-        	messageTA.setText("CONGRATS! Everyone made\n it to Mars safely :)");
-        }
-        
         sButton.setEnabled(true);
         cButton.setEnabled(true);
         lButton.setEnabled(true);
         gButton.setEnabled(true);
         h1Button.setEnabled(true);
         h2Button.setEnabled(true);
+        
+        if(earth.getOccupants().isEmpty())
+        {
+        	messageTA.setText("CONGRATS! Everyone made\n it to Mars safely :)");
+                sButton.setEnabled(false);
+                cButton.setEnabled(false);
+                lButton.setEnabled(false);
+                gButton.setEnabled(false);
+                h1Button.setEnabled(false);
+                h2Button.setEnabled(false);
+        }
+        
+        
+        if(m % 2 == 0){
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm.get(i).equals("Lion"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm.getSize()){
+                lButton.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm.get(i).equals("Cow"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm.getSize()){
+                cButton.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm.get(i).equals("Grains"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm.getSize()){
+                gButton.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm.get(i).equals("Human 1"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm.getSize()){
+                h1Button.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm.get(i).equals("Human 2"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm.getSize()){
+                h2Button.setEnabled(false);
+            }
+            c = 0;
+        }
+        else{
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm2.get(i).equals("Lion"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm2.getSize()){
+                lButton.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm2.get(i).equals("Cow"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm2.getSize()){
+                cButton.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm2.get(i).equals("Grains"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm2.getSize()){
+                gButton.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm2.get(i).equals("Human 1"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm2.getSize()){
+                h1Button.setEnabled(false);
+            }
+            c = 0;
+            for(int i = 0; i < dm.size(); i++){
+                if(!(dm2.get(i).equals("Human 2"))){
+                    c = c + 1;
+                }
+            }
+            if(c == dm2.getSize()){
+                h2Button.setEnabled(false);
+            }
+            c = 0;
+        }
+        System.out.println("C = " + c);
     }//GEN-LAST:event_goButtonActionPerformed
 
     private void clrButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clrButtonActionPerformed
@@ -573,6 +815,12 @@ public class Frame extends javax.swing.JFrame {
     private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {
     	m = 0;
     	movesLbl.setText("Moves: " + m);
+        sButton.setEnabled(true);
+        cButton.setEnabled(true);
+        lButton.setEnabled(true);
+        gButton.setEnabled(true);
+        h1Button.setEnabled(true);
+        h2Button.setEnabled(true);
         
         earth.addOccupant(s.name);
         earth.addOccupant(c.name);
@@ -602,17 +850,13 @@ public class Frame extends javax.swing.JFrame {
         messageTA.setText("");
     	
     }
-    
-    public boolean decider(Entity e1, Entity e2, Entity e3){
-        if(e1.name.equalsIgnoreCase("Lion")){
-            
-        }
-        return true;
-    }
+        
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        //Graphics g = new Graphics();
+       
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -639,7 +883,8 @@ public class Frame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frame().setVisible(true);
+            //    Frame f = new Frame().setVisible(true);
+		
             }
         });
     }
